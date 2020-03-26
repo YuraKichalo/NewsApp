@@ -1,4 +1,4 @@
-[DEMO](news-app-yurakichalo.surge.sh).
+[DEMO](news-app-yurakichalo.surge.sh/home).
 
 ### Hardcoded username: `admin`
 
