@@ -1,0 +1,33 @@
+.profile {
+    height: fit-content;
+}
+
+.profile > h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.user-info-wrapper > h3 {
+    font-size: 24px;
+}
+
+.user-info-wrapper > span {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.user-info-wrapper img {
+    width: 500px;
+    height: 500px;
+    animation: animateImg 2s linear infinite;
+}
+
+@keyframes animateImg {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

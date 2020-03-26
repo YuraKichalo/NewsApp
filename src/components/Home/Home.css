@@ -1,0 +1,29 @@
+.home {
+    height: fit-content;
+}
+
+.home img {
+    width: 200px;
+    height: 200px;
+}
+
+.img-wrapper, .home > h1 {
+    text-align: center;
+}
+
+.img-wrapper {
+    margin-bottom: 50px;
+}
+
+.text {
+    word-wrap: break-word;
+}
+
+.text > p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.home .content {
+    padding: 10px;
+}

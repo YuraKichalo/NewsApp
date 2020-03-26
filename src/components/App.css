@@ -1,0 +1,10 @@
+.routes-wrapper {
+    padding: 20px;
+}
+
+.spinner {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

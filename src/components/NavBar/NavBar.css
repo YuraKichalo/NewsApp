@@ -1,0 +1,57 @@
+.nav {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 !important;
+}
+
+.nav > a {
+    position: relative;
+    display: block;
+}
+
+.nav > a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: darkgreen;
+    transition: .2s;
+    top: -3px;
+    left: 0;
+}
+.nav > a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: darkgreen;
+    transition: .2s;
+    bottom: -3px;
+    right: 0;
+}
+
+.nav > a:hover:after {
+    width: 100%;
+}
+.nav > a:hover:before {
+    width: 100%;
+}
+
+.nav > a.active:after {
+    color: darkgreen;
+    width: 100%;
+}
+
+.nav > a.active:before {
+    color: darkgreen;
+    width: 100%;
+}
+
+.nav > a:hover {
+    color: darkgreen;
+}
+
+.nav > a.active {
+    color: darkgreen;
+}
