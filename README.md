@@ -1,4 +1,4 @@
-Try it here [DEMO](news-app-yurakichalo.surge.sh).
+Try it here [DEMO](https://github.com/YuraKichalo/NewsApp/blob/master/news-app-yurakichalo.surge.sh).
 
 ### Hardcoded username: `admin`
 
