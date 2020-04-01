@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import {connect} from "react-redux";
 import Profile from "./Profile";
+import {getIsAuth} from "../../common/selectors/auth";
 
 const ProfileContainer = (props) => {
     return <Profile isAuth={props.isAuth} />
@@ -13,7 +14,7 @@ ProfileContainer.propTypes = {
 
 const mapStateToProps = state => {
     return {
-        isAuth: state.auth.isAuth
+        isAuth: getIsAuth(state)
 
     }
 };

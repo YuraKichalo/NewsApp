@@ -30,3 +30,36 @@
     width: 500px;
     height: 300px;
 }
+
+.paginator-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    font-size: 15px;
+}
+
+.pagination > li {
+    list-style-type: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.pagination .active {
+    box-shadow: 0 0 10px rgba(0,0,0,1.5);
+    font-size: 20px;
+}
+
+.pagination .active > a {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.pagination a:hover {
+    color: darkgreen;
+}

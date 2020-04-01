@@ -1,9 +1,9 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
 import {connect} from "react-redux";
 import PropTypes from 'prop-types';
 import Header from "./Header";
 import { setAuth } from "../../redux/authReducer";
+import {getIsAuth} from "../../common/selectors/auth";
 
 const HeaderContainer = (props) => {
     return <Header isAuth={props.isAuth} setAuth={props.setAuth} />
@@ -16,7 +16,7 @@ HeaderContainer.propTypes = {
 
 const mapStateToProps = state => {
     return {
-        isAuth: state.auth.isAuth,
+        isAuth: getIsAuth(state),
     }
 };
 

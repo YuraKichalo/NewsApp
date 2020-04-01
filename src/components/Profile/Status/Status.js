@@ -2,11 +2,14 @@ import React, { useState, useEffect } from "react";
 
 const Status = () => {
     const [editMode, setEditMode] = useState(false);
-    const [status, setStatus] = useState('');
+    const [status, setStatus] = useState(localStorage.getItem('user-current-status'));
 
     useEffect(() => {
         localStorage.setItem('user-current-status', status)
-    });
+        setStatus(localStorage.getItem('user-current-status'));
+    }, [status]);
+
+    console.log('LOCAL STORE: ' + localStorage.getItem('user-current-status'))
 
     const deactivate = () => setEditMode(false);
 

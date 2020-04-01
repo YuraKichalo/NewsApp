@@ -8,8 +8,8 @@ const instance = axios.create({
 });
 
 export const newsApi = {
-    getNews(category) {
-        return instance.get(`top-headlines?country=us&category=${category}`)
+    getNews(category, currentPage) {
+        return instance.get(`top-headlines?country=us&pageSize=10&page=${currentPage}&category=${category}`)
             .then(response => {
                 if (response.status === 200) return response.data;
             })

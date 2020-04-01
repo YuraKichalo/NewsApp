@@ -17,9 +17,9 @@
 }
 
 .user-info-wrapper img {
-    width: 500px;
-    height: 500px;
-    animation: animateImg 2s linear infinite;
+    width: 400px;
+    height: 400px;
+    animation: animateImg 10s linear infinite;
 }
 
 @keyframes animateImg {

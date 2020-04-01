@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 import {Redirect} from "react-router-dom";
 import './Profile.css';
 import Status from "./Status/Status";
+import {appRoutes} from "../../common/constants/routs";
 
 const Profile = ({ isAuth }) => {
 
     if (!isAuth) {
-        return <Redirect to='/login' />
+        return <Redirect to={appRoutes.login} />
     }
 
     return (

@@ -4,21 +4,21 @@ import {Collapse} from 'react-collapse';
 import './Accordion.css';
 
 const Accordion = ({ title, children }) => {
-    const [isOpened1, setIsOpened1] = useState(false);
-    const color = isOpened1 ? 'darkgreen' : 'black';
+    const [isOpened, setIsOpened] = useState(false);
+    const color = isOpened ? 'darkgreen' : 'black';
     const styles = { color };
 
     const handleClick = () => {
-        setIsOpened1(!isOpened1)
+        setIsOpened(!isOpened)
     };
 
     return (
         <>
             <h2 className='collapse-title' onClick={handleClick} style={styles}>
-                <i className={`angle ${isOpened1 ? 'up' : 'down'} icon`}></i>
+                <i className={`angle ${isOpened ? 'up' : 'down'} icon`}></i>
                 {title}
             </h2>
-            <Collapse isOpened={isOpened1}>
+            <Collapse isOpened={isOpened}>
                 {children}
             </Collapse>
         </>

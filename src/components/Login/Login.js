@@ -4,6 +4,7 @@ import {SubmissionError} from "redux-form";
 import {Redirect} from "react-router-dom";
 import './Login.css';
 import WithReduxForm from "./LoginForm/LoginForm";
+import {appRoutes} from "../../common/constants/routs";
 
 
 const Login = ({ setAuth, isAuth }) => {
@@ -18,7 +19,7 @@ const Login = ({ setAuth, isAuth }) => {
     };
 
     if (isAuth) {
-        return <Redirect to='/profile' />
+        return <Redirect to={appRoutes.profile} />
     }
 
     return (

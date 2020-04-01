@@ -4,8 +4,10 @@ import PropTypes from 'prop-types';
 import NavBar from "../NavBar/NavBar";
 import Button from "../../common/components/Button/Button";
 import './Header.css';
+import {appRoutes} from "../../common/constants/routs";
 
 const Header = ({ isAuth, setAuth }) => {
+    const {home, login} = appRoutes;
 
     const logout = () => {
         setAuth(false)
@@ -13,7 +15,7 @@ const Header = ({ isAuth, setAuth }) => {
 
     return (
         <div className='header-main'>
-            <NavLink to='/home'>
+            <NavLink to={home}>
                 <h2 className="ui header">
                     <i className="paper plane icon"></i>
                     <div className="content">News App</div>
@@ -24,7 +26,7 @@ const Header = ({ isAuth, setAuth }) => {
                 {isAuth ? (
                     <Button onLogout={logout} size='tiny' color='secondary'>Logout</Button>
                 ) : (
-                    <NavLink to='/login'>
+                    <NavLink to={login}>
                         <Button size='tiny' color='secondary'>Login</Button>
                     </NavLink>
                 )}
