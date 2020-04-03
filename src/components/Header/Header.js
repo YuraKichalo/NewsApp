@@ -24,7 +24,7 @@ const Header = ({ isAuth, setAuth }) => {
             <div className='header-left-side'>
                 <NavBar/>
                 {isAuth ? (
-                    <Button onLogout={logout} size='tiny' color='secondary'>Logout</Button>
+                    <Button onClick={logout} size='tiny' color='secondary'>Logout</Button>
                 ) : (
                     <NavLink to={login}>
                         <Button size='tiny' color='secondary'>Login</Button>

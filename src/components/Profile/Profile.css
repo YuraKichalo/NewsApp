@@ -11,23 +11,48 @@
     font-size: 24px;
 }
 
-.user-info-wrapper > span {
+.user-info-wrapper > .status-text {
     cursor: pointer;
+}
+
+.user-info-wrapper > div, span, p {
     font-size: 20px;
 }
 
 .user-info-wrapper img {
     width: 400px;
     height: 400px;
-    animation: animateImg 10s linear infinite;
 }
 
-@keyframes animateImg {
-    0% {
-        transform: rotate(0deg);
-    }
+.user-info p, .form p {
+    margin: 0!important;
+}
 
-    100% {
-        transform: rotate(360deg);
-    }
+.user-info .contacts, .form .contacts {
+    margin-left: 20px;
+}
+
+.form .contacts {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-info button, .form button {
+    margin-top: 20px!important;
+}
+
+.form {
+    width: 50%;
+}
+
+.contacts .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social .field {
+    width: 85%;
 }
