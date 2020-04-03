@@ -2,5 +2,5 @@
 
 ### Hardcoded password: `12345`
 
-[DEMO]: "news-app-yurakichalo.surge.sh"
+[DEMO]:(news-app-yurakichalo.surge.sh)
 
